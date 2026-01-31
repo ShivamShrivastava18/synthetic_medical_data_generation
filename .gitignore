@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+*.cache
+
+# Project-specific temporary files
+clean_data.py
+analyze_data.py
+validate_preprocessing.py
+test_reproducibility.py
+generate_final_plots.py
+
+# Unwanted data files (keep only essential ones)
+heart_disease_uci.csv
+synthetic_data_ctgan.csv
+synthetic_data_gaussian_copula.csv
+literature_review_prompt.txt
+synthetic_data_analysis_complete.txt
+Untitled.ipynb
+
+# Keep these important files/directories:
+# - data/raw/diabetes.csv
+# - data/processed/
+# - data/synthetic/
+# - models/
+# - generators/
+# - experiments/
+# - evaluation/
+# - preprocessing/
+# - results/
+# - main.py
+# - README.md
+# - requirements.txt

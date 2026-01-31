@@ -1,0 +1,84 @@
+feat: Complete BTech capstone project - Synthetic Medical Data Generation
+
+## Summary
+Implemented comprehensive pipeline for generating and evaluating synthetic medical 
+tabular data using CTGAN, TVAE, and TabDDPM generative models. Project includes 
+complete reproducibility with one-command execution.
+
+## Major Features Added
+
+### Phase 1-2: Data Pipeline & Baseline Models
+- Implemented preprocessing pipeline with median imputation and standardization
+- Created baseline ML models (Logistic Regression, Random Forest, XGBoost)
+- Achieved 77.3% accuracy baseline with Random Forest
+
+### Phase 3: Generative Models
+- Implemented CTGAN generator using SDV library
+- Implemented TVAE generator using SDV library
+- Implemented TabDDPM generator using PyTorch
+- Generated 614 synthetic samples per model
+
+### Phase 4: TSTR Evaluation (Train on Synthetic, Test on Real)
+- Evaluated all synthetic datasets on real test data
+- TVAE achieved best performance: 65.4% avg accuracy (87% of baseline)
+- Demonstrated synthetic data utility for ML tasks
+
+### Phase 5: Statistical Fidelity Analysis
+- Performed KS-tests on all numerical features
+- Computed correlation matrix distances
+- Generated 28 visualization plots
+- TVAE achieved best fidelity: KS=0.186, Corr Distance=0.568
+
+### Phase 6: Privacy Evaluation
+- Implemented Nearest Neighbor Distance Ratio (NNDR)
+- Performed duplicate detection
+- Calculated disclosure risk
+- All models achieved "Excellent" privacy (NNDR > 0.86)
+
+### Phase 7: Final Integration
+- Created main.py for one-command execution
+- Consolidated all results into final_summary.csv
+- Generated 4 final comparison plots
+- Complete reproducibility achieved
+
+## Key Results
+- **Winner**: TVAE (best utility + fidelity + good privacy)
+- **TSTR Performance**: 65.4% avg accuracy (87% of baseline)
+- **Statistical Fidelity**: KS=0.186, Correlation Distance=0.568
+- **Privacy**: NNDR=0.864, Disclosure Risk=0.98% (Excellent)
+
+## Repository Cleanup
+- Removed temporary scripts (clean_data.py, analyze_data.py, etc.)
+- Removed unwanted data files and notebooks
+- Removed __pycache__ and .ipynb_checkpoints directories
+- Added comprehensive .gitignore file
+
+## Project Structure
+```
+Capstone/
+├── main.py                    # One-command execution
+├── preprocessing/             # Data preprocessing
+├── models/                    # ML model implementations
+├── generators/                # Generative models (CTGAN, TVAE, TabDDPM)
+├── experiments/               # Baseline & TSTR evaluation
+├── evaluation/                # Fidelity & privacy analysis
+├── data/                      # Raw, processed, synthetic datasets
+└── results/                   # All metrics & visualizations
+```
+
+## Usage
+```bash
+python main.py  # Run complete pipeline (10-15 minutes)
+```
+
+## Technologies
+Python 3.13, scikit-learn, XGBoost, SDV, PyTorch, pandas, numpy, matplotlib, seaborn
+
+## Deliverables
+- 13 Python scripts
+- 6 datasets (1 raw, 2 processed, 3 synthetic)
+- 5 result CSVs + final summary
+- 32 visualization plots
+- Complete documentation
+
+Project ready for report writing and viva presentation.

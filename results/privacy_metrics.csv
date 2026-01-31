@@ -1,0 +1,4 @@
+synthetic_data,avg_nndr,exact_duplicates,near_duplicates,disclosure_risk_pct,privacy_rating
+CTGAN,0.8955762546056043,0,0,0.32573289902280134,Excellent
+TVAE,0.8644157652114141,0,0,0.9771986970684038,Excellent
+TabDDPM,0.8948114679158696,0,0,0.4885993485342019,Excellent
