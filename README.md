@@ -1,4 +1,4 @@
-# BTech Capstone Project: Synthetic Medical Data Generation
+# Capstone Project: Synthetic Medical Data Generation
 
 ## Project Overview
 
@@ -245,11 +245,7 @@ This capstone project successfully demonstrates that **TVAE can generate high-qu
 
 **TVAE is recommended for production use** in privacy-sensitive medical data applications where real data sharing is restricted.
 
-## Author
-
-BTech Capstone Project
-Date: January 31, 2026
-
 ## License
 
 This project is for educational purposes as part of a BTech capstone requirement.
+
